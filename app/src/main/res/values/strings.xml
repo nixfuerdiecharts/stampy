@@ -4,20 +4,37 @@
     <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
 
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
 
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <!-- Settings Activity -->
+
+    <string name="time_header">Time</string>
+    <string name="notification_header">Notifications</string>
+
+    <string name="hours_to_work_title">Min. working time</string>
+    <string name="max_work_hours_title">Max. working time</string>
+    <string name="break_time_title">Break time</string>
+    <string name="notification_min_title">Notify if min. working time reached</string>
+    <string name="notification_max_title">Notify if max. working time reached</string>
+    <string name="notify_before_max_title">minutes before max. working time</string>
+
+
+
+    <!-- Shared Preferences Keys -->
     <string name="sp_hours_to_work">HOURS_TO_WORK</string>
     <string name="sp_max_work_hours">MAX_WORK_HOURS</string>
     <string name="sp_break_time">BREAK_TIME</string>
+    <string name="sp_notify_min">NOTIFY_MIN</string>
+    <string name="sp_notify_max">NOTIFY_MAX</string>
+    <string name="sp_notify_before_max">NOTIFY_BEFORE_MAX</string>
+
+
+    <!-- Default Values -->
+    <string name="default_hours_to_work">7.8</string>
+    <string name="default_max_work_hours">10.45</string>
+    <string name="default_break_time">0.5</string>
+    <string name="default_notify_before_max">10</string>
+
+
 </resources>

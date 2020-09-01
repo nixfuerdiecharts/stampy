@@ -2,6 +2,7 @@ package com.example.stampy;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -22,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         setContentView(R.layout.activity_main);
-        initSharedPreferences();
+        //Set Default Values of Shared Preferences
+        PreferenceManager.setDefaultValues(this, R.xml.root_preferences, false);
+        //initSharedPreferences();
     }
 
     private void initSharedPreferences() {
