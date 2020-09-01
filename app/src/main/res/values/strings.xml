@@ -1,14 +1,12 @@
 <resources>
     <string name="app_name">stampy</string>
-    <string name="title_settings">Einstellungen</string>
-    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_settings">Settings</string>
 
-    <!-- Preference Titles -->
-
-
+    <!-- Main Activity -->
+    <string name="tv_timer_min_title">time left until min. working time</string>
+    <string name="tv_timer_max_title">time left until max. working time</string>
 
     <!-- Settings Activity -->
-
     <string name="time_header">Time</string>
     <string name="notification_header">Notifications</string>
 
@@ -17,9 +15,8 @@
     <string name="break_time_title">Break time</string>
     <string name="notification_min_title">Notify if min. working time reached</string>
     <string name="notification_max_title">Notify if max. working time reached</string>
-    <string name="notify_before_max_title">minutes before max. working time</string>
-
-
+    <string name="notify_before_max_title">Minutes before max. working time</string>
+    <string name="notify_before_min_title">Minutes before min. working time</string>
 
     <!-- Shared Preferences Keys -->
     <string name="sp_hours_to_work">HOURS_TO_WORK</string>
@@ -28,13 +25,14 @@
     <string name="sp_notify_min">NOTIFY_MIN</string>
     <string name="sp_notify_max">NOTIFY_MAX</string>
     <string name="sp_notify_before_max">NOTIFY_BEFORE_MAX</string>
-
+    <string name="sp_notify_before_min">NOTIFY_BEFORE_MIN</string>
+    <string name="sp_timer_running">TIMER_RUNNING</string>
 
     <!-- Default Values -->
     <string name="default_hours_to_work">7.8</string>
     <string name="default_max_work_hours">10.45</string>
     <string name="default_break_time">0.5</string>
     <string name="default_notify_before_max">10</string>
-
+    <string name="default_notify_before_min">10</string>
 
 </resources>

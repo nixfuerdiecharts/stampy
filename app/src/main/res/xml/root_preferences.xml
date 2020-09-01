@@ -25,6 +25,13 @@
             app:key="@string/sp_notify_min"
             app:title="@string/notification_min_title" />
 
+        <EditTextPreference
+            app:defaultValue="@string/default_notify_before_min"
+            app:dependency="@string/sp_notify_min"
+            app:key="@string/sp_notify_before_min"
+            app:title="@string/notify_before_min_title"
+            app:useSimpleSummaryProvider="true" />
+
         <SwitchPreferenceCompat
             app:defaultValue="false"
             app:key="@string/sp_notify_max"
@@ -36,7 +43,6 @@
             app:key="@string/sp_notify_before_max"
             app:title="@string/notify_before_max_title"
             app:useSimpleSummaryProvider="true" />
-        
 
     </PreferenceCategory>
 
