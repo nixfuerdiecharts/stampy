@@ -5,6 +5,8 @@
     <!-- Main Activity -->
     <string name="tv_timer_min_title">time left until min. working time</string>
     <string name="tv_timer_max_title">time left until max. working time</string>
+    <string name="btn_clock_in">clock in</string>
+    <string name="btn_clock_out">clock out</string>
 
     <!-- Settings Activity -->
     <string name="time_header">Time</string>

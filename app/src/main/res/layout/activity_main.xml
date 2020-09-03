@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity"
     android:orientation="vertical"
     android:paddingHorizontal="15dp"
-    android:paddingVertical="20dp">
+    android:paddingVertical="20dp"
+    tools:context=".activities.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,17 +15,38 @@
         android:layout_weight="2"
         android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_stamp"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:backgroundTint="@color/colorAccent"/>
+            android:orientation="horizontal"
+            android:id="@+id/ll_button_area">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_stamp"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/btn_clock_in"
+                android:textColor="@color/colorWhite"
+                android:elevation="4dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_edit_clock_in"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:src="@drawable/ic_outline_edit_24" />
+
+        </LinearLayout>
+
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -38,42 +59,42 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tv_timer_min_title"
             android:layout_gravity="center_horizontal"
+            android:text="@string/tv_timer_min_title"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary" />
 
         <TextView
             android:id="@+id/tv_time_min"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="time_min"
             android:layout_gravity="center_horizontal"
+            android:text="time_min"
             android:textAlignment="center"
-            android:textSize="50sp"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="25dp"/>
+            android:layout_height="25dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tv_timer_max_title"
             android:layout_gravity="center_horizontal"
+            android:text="@string/tv_timer_max_title"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary" />
 
         <TextView
             android:id="@+id/tv_time_max"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="time_max"
             android:layout_gravity="center_horizontal"
+            android:text="time_max"
             android:textAlignment="center"
-            android:textSize="50sp"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp" />
 
     </LinearLayout>
 
